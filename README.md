@@ -139,30 +139,6 @@ game-project/
 
 ---
 
-### Desarrollo simultáneo y puertos
 
-- Backend: `3001`
-- Frontend (Vite): `5173`
-
-Si pruebas en red local, levanta Vite con `npm run dev -- --host` y usa `VITE_API_URL` apuntando a la IP LAN del backend, por ejemplo:
-
-```env
-VITE_API_URL=http://192.168.1.100:3001
-```
-
----
-
-### Solución de problemas
-
-- Asegura que MongoDB esté corriendo y `MONGO_URI` sea accesible.
-- Si el frontend no carga datos, verifica `VITE_API_URL` y la consola del navegador.
-- CORS: el backend permite `origin: '*'` vía Socket.io y `cors()` en Express para desarrollo.
-
----
-
-### Licencia y autoría
-
-- Autor: Gustavo Willyn Sánchez Rodríguez — `guswillsan@gmail.com`
-- Licencia: ISC (verifica archivos de licencia si aplica).
 
 
